@@ -1,0 +1,5 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="brightness_low_24px">
+<path id="icon/device/brightness_low_24px" fill-rule="evenodd" clip-rule="evenodd" d="M20 4V8.69L23.31 12L20 15.31V20H15.31L12 23.31L8.69 20H4V15.31L0.690002 12L4 8.69V4H8.69L12 0.690002L15.31 4H20ZM18 18V14.48L20.48 12L18 9.52V6H14.48L12 3.52L9.52 6H6V9.52L3.52 12L6 14.48V18H9.52L12 20.48L14.48 18H18ZM12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6ZM8 12C8 14.21 9.79 16 12 16C14.21 16 16 14.21 16 12C16 9.79 14.21 8 12 8C9.79 8 8 9.79 8 12Z" fill="currentColor" fill-opacity="1"/>
+</g>
+</svg>

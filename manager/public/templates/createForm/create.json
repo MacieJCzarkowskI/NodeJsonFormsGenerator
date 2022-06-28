@@ -1,0 +1,230 @@
+{
+  "type": "div",
+  "options": {
+    "className": "max-w-screen-xl"
+  },
+  "children": [
+    {
+      "type": "div",
+      "options": {
+        "className": "flex justify-between mb-7"
+      },
+      "children": [
+        {
+          "type": "div",
+          "children": [
+            {
+              "type": "h1",
+              "options": {
+                "className": "font-bold text-3xl mb-3"
+              },
+              "children": "Create New Form"
+            },
+            {
+              "type": "p",
+              "options": {
+                "className": "text-sm text-gray-500"
+              },
+              "children": "Get started by selecting key data relating to your form"
+            }
+          ]
+        },
+        {
+          "type": "div",
+          "children": [
+            {
+              "type": "button",
+              "options": {
+                "className": "bg-red-100 text-red-600 font-semibold text-sm"
+              },
+              "children": "Cancel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "form",
+      "options": {
+        "shouldUnregister": false
+      },
+      "children": [
+        {
+          "type": "stepper",
+          "options": {
+            "hideFirstStepBackButton": true,
+            "steps": [
+              {
+                "key": "step1",
+                "title": {
+                  "type": "span",
+                  "options": {
+                    "className": "font-semibold"
+                  },
+                  "children": "Step 1"
+                },
+                "content": [
+                  {
+                    "type": "select",
+                    "options": {
+                      "label": "First Select",
+                      "name": "step1.firstSelect",
+                      "options": ["option1", "option2", "option3"],
+                      "validationRules": {
+                        "required": "required"
+                      }
+                    }
+                  },
+                  {
+                    "type": "input",
+                    "options": {
+                      "label": "First Input",
+                      "name": "step1.firstInput",
+                      "validationRules": {
+                        "required": "required"
+                      }
+                    }
+                  }
+                ],
+                "nextStepButton": {
+                  "type": "button",
+                  "options": {
+                    "expressionProperties": {
+                      "disabled": "!this.step1?.$isValid"
+                    }
+                  },
+                  "children": "Next"
+                }
+              },
+              {
+                "key": "step2",
+                "title": {
+                  "type": "span",
+                  "options": {
+                    "className": "font-semibold"
+                  },
+                  "children": "Step 2"
+                },
+                "content": [
+                  {
+                    "type": "select",
+                    "options": {
+                      "label": "First Select",
+                      "name": "step2.firstSelect",
+                      "options": ["option1", "option2", "option3"],
+                      "disabled": true
+                    }
+                  }
+                ]
+              },
+              {
+                "key": "step3",
+                "title": {
+                  "type": "span",
+                  "options": {
+                    "className": "font-semibold"
+                  },
+                  "children": "Step 3"
+                },
+                "content": [
+                  {
+                    "type": "select",
+                    "options": {
+                      "label": "Select Option",
+                      "name": "step3.options",
+                      "options": ["option_1", "option_2"],
+                      "isDisabled": false
+                    }
+                  },
+                  {
+                    "type": "conditional",
+                    "options": {
+                      "watcher": "step3",
+                      "condition": "this.step3.options === 'option_1'",
+                      "whenTrue": {
+                        "type": "div",
+                        "children": [
+                          {
+                            "type": "date-picker",
+                            "options": {
+                              "label": "Date 1 option 1",
+                              "name": "step3_option_1.option1Date1",
+                              "validationRules": {
+                                "minLength": "required"
+                              }
+                            }
+                          },
+                          {
+                            "type": "date-picker",
+                            "options": {
+                              "label": "Date 2 option 1",
+                              "name": "step3_option_1.option1Date2",
+                              "validationRules": {
+                                "minLength": "required"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "whenFalse": {
+                        "type": "div",
+                        "children": [
+                          {
+                            "type": "date-picker",
+                            "options": {
+                              "label": "Date 2 option 2",
+                              "name": "step3_option_2.option1Date2",
+                              "validationRules": {
+                                "minLength": "required"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "nextStepButton": {
+                  "type": "button",
+                  "options": {
+                    "expressionProperties": {
+                      "disabled": "false"
+                    }
+                  },
+                  "children": "Next"
+                }
+              },
+              {
+                "key": "step4",
+                "title": {
+                  "type": "span",
+                  "options": {
+                    "className": "font-semibold"
+                  },
+                  "children": "Select Owner"
+                },
+                "content": [
+                  {
+                    "type": "select",
+                    "options": {
+                      "label": "Owner",
+                      "name": "step4.owner",
+                      "options": ["option1", "option2", "option3"]
+                    }
+                  }
+                ]
+              }
+            ],
+            "finalStepButton": {
+              "type": "button",
+              "children": "Submit",
+              "options": {
+                "type": "submit"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

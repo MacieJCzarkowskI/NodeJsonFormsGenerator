@@ -1,0 +1,118 @@
+[
+  {
+    "type": "accordion",
+    "options": {
+      "title": "Asset and Workpackage",
+      "expanded": true
+    },
+    "children": [
+      {
+        "type": "form",
+        "options": {},
+        "children": [
+          {
+            "type": "input",
+            "options": {
+              "label": "First input",
+              "name": "firstInput",
+              "validationRules": {
+                "required": "firstInput is required",
+                "minLength": {
+                  "value": 6,
+                  "message": "firstInput length < 6"
+                }
+              }
+            }
+          },
+          {
+            "type": "select",
+            "options": {
+              "label": "First select",
+              "options": [1, 2, 3, 4],
+              "value": 1,
+              "name": "firstSelect",
+              "validationRules": {
+                "required": "firstSelect is required"
+              }
+            }
+          },
+          {
+            "type": "select",
+            "options": {
+              "isMulti": true,
+              "label": "Second select",
+              "options": ["option1", "option2"],
+              "value": "option1",
+              "name": "secondSelect"
+            }
+          },
+          {
+            "type": "button",
+            "options": {
+              "type": "submit"
+            },
+            "children": "Submit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "accordion",
+    "options": {
+      "title": "My accordion title 2"
+    },
+    "expanded": false,
+    "children": [
+      {
+        "type": "form",
+        "options": {},
+        "children": [
+          {
+            "type": "input",
+            "options": {
+              "label": "First input",
+              "name": "firstInput",
+              "validationRules": {
+                "required": "firstInput is required",
+                "minLength": {
+                  "value": 6,
+                  "message": "firstInput length < 6"
+                }
+              }
+            }
+          },
+          {
+            "type": "select",
+            "options": {
+              "label": "First select",
+              "options": [1, 2, 3, 4],
+              "value": 1,
+              "name": "firstSelect",
+              "validationRules": {
+                "required": "firstSelect is required"
+              }
+            }
+          },
+          {
+            "type": "select",
+            "options": {
+              "isMulti": true,
+              "label": "Second select",
+              "options": ["option1", "option2"],
+              "value": "option1",
+              "name": "secondSelect"
+            }
+          },
+          {
+            "type": "button",
+            "options": {
+              "type": "submit"
+            },
+            "children": "Submit"
+          }
+        ]
+      }
+    ]
+  }
+]

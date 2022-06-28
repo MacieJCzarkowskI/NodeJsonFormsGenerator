@@ -1,0 +1,32 @@
+{
+  "type": "div",
+  "options": {
+    "className": "max-w-screen-xl"
+  },
+  "children": {
+    "type": "table",
+    "options": {
+      "fullWidth": true,
+      "columns": [
+        { "Header": "#", "accessor": "index", "width": 60 },
+        { "Header": "Name", "accessor": "name" },
+        { "Header": "Number", "accessor": "number" },
+        { "Header": "Owner", "accessor": "owner" },
+        { "Header": "Status", "accessor": "status" },
+        { "Header": "Created Date", "accessor": "createDate" }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "tagCode": "1",
+          "index": 1,
+          "name": "Maciek",
+          "number": "pierwszy",
+          "owner": ["maciek", "krzysiek"],
+          "status": "WIP",
+          "createDate": "12/11/2020 12:24:16 PM"
+        }
+      ]
+    }
+  }
+}

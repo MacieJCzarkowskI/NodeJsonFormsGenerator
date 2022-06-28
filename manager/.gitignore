@@ -1,0 +1,34 @@
+# dependencies
+/node_modules
+.next
+.vscode
+.idea
+
+# testing
+/coverage
+
+# production
+/dist
+/build
+/out
+
+#cache
+/.cache
+
+# misc
+.DS_Store
+.Spotlight-V100
+Thumbs.db
+
+# Package
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+package-lock.json
+
+/yarn.lock
+/yarn-error.log
+
+# Environment Variables
+.env
